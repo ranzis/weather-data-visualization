@@ -1,5 +1,31 @@
 # Weather Data Visualization
 
+
+
+## How to run
+
+1. **Install dependencies**
+
+
+   npm install
+
+
+2. **Place the weather database**
+
+   - Place `weather.sqlite` in the root folder directory .
+   - Make sure the DB is accessible to server components.
+
+3. **Run the dev server**
+
+ npm run dev
+
+
+4. **Open in browser**
+   - Go to http://localhost:3000
+     
+   - The page will show last 30 days by default, or any range via URL.
+
+
 ---
 
 ## Features
@@ -9,7 +35,6 @@
 - **Default Range:** Shows the last 30 days of data by default.
 - **Sharable URLs:** Every selected date range is encoded in the URL (query params) — so sharing a link always shows the same data and selection.
 - **Data Persistence:** Reloading the page preserves the selected date range and visualization.
-- **Loading Skeleton:** Beautiful animated skeleton shown while loading.
 - **Modern UI:** Uses Tailwind CSS and [shadcn/ui](https://ui.shadcn.com/) for a clean, production-ready design.
 - **Performance:** Server-side API endpoints efficiently aggregate daily min/max data via SQL.
 
@@ -82,30 +107,6 @@ public/
 
 ---
 
-## How to run
-
-1. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-2. **Place the weather database**
-
-   - Place `weather.sqlite` in the `public/` or `src/app/` directory (according to your db utility).
-   - Make sure the DB is accessible to server components.
-
-3. **Run the dev server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**
-   - Go to http://localhost:3000
-   - The page will show last 30 days by default, or any range via URL.
-
----
 
 ## Technologies used
 
@@ -116,7 +117,7 @@ public/
 - [SQLite](https://www.sqlite.org/index.html)
 - [date-fns](https://date-fns.org/) / [dayjs](https://day.js.org/) (for date formatting)
 
----
+
 
 ---
 
